@@ -5,7 +5,7 @@ import {UUPSUpgradeable} from "@openzeppelin-contracts-upgradeable/proxy/utils/U
 import {OwnableUpgradeable} from "@openzeppelin-contracts-upgradeable/access/OwnableUpgradeable.sol";
 import {Initializable} from "@openzeppelin-contracts-upgradeable/proxy/utils/Initializable.sol";
 
-contract BoxV1 is UUPSUpgradeable, Initializable, OwnableUpgradeable {
+contract BoxV1 is Initializable, OwnableUpgradeable, UUPSUpgradeable {
     // If we change the storage variable index, we will mess it up
     uint256 internal number;
 
